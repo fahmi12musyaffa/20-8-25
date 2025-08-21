@@ -1,6 +1,7 @@
 public class SavingsAccount2 {
     public double balance;
     public String name;
+    public double interestRate = 0.01;
 
   
     public void displayCustomer() {
@@ -13,6 +14,11 @@ public class SavingsAccount2 {
         System.out.println("Deposited: " + amount);
         System.out.println("New Balance: " + balance);
         System.out.println();
+
+    }public double calcInterest() {
+        double interestRate = 0.01;
+        double interest = balance * interestRate;
+        return interest;
 
     }
     public void withdraw(double amount) {
